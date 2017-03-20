@@ -1,0 +1,412 @@
+/*
+Theme Name: Bear Supply Co.
+Theme URI:
+Description: Custom CSS for BSC.
+Version: 1.0
+Author: Justin Dickey
+Author URI:
+*/
+
+/* reset styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0; padding: 0;  border: 0; outline: 0; font-size: 100%;
+    vertical-align: baseline; background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+
+/* ANIMATION */
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: "Majesti Banner Heavy";
+    src: url("fonts/majesti/majesti-banner-heavy.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Majesti Banner Light";
+    src: url("fonts/majesti/majesti-banner-light.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url("fonts/metropolis/metropolis-thin.otf")
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url("fonts/Crimson/CrimsonText-Roman.ttf")
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Crimson Text', Georgia, serif;
+    top: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h4,
+h5,
+h6 {
+  color: #f1f1f1;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.998em;
+  padding-top: 60px;
+  color: #f1f1f1;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+h5 {
+  font-size: 26px;
+  font-size: 2em;
+}
+
+h6 {
+  font-size: 18px;
+  font-size: 1.2em;
+}
+
+p {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #F0BA61;
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 24px;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #CC9339;
+}
+
+.title-area {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 100px;
+  animation: fadeIn 2s ease-in-out 1;
+}
+
+#bsc-logo {
+  max-width: 200px;
+  width: 35%;
+  height: auto;
+}
+
+#site-title {
+  margin: 2% auto;
+  padding-top: 20px;
+  font-family: "Majesti Banner Heavy", Georgia, serif;
+  color: #F0BA61;
+  text-align: center;
+  font-weight: 900;
+  font-size: 80px;
+  font-size: 10vmin;
+  letter-spacing: -2px;
+  text-shadow: 0 5px 15px #222;
+}
+
+.site-title {
+  padding-left: 30px;
+  font-family: 'Majesti Banner Light', Georgia, serif;
+  font-size: 32px;
+  font-size: 6vmin;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  color: #f0ba61;
+  font-weight: 100;
+}
+
+.parallax #site-title h1 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+#partTwo h1 {
+  color: #222;
+  padding-top: 50px;
+  text-align: left;
+  margin: 100px 0 50px 5%;
+}
+
+#partThree h1 {
+ color: #fff;
+}
+
+
+/* container - place inside each section or around the entire page depending on your layout */
+.container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+/* for clearing any floats <br class=&quot;clearfloat&quot; /> */
+.clearfloat {
+    clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+
+
+
+/* NAVIGATION */
+
+nav {
+  text-decoration: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 13px;
+}
+
+nav ul {
+  list-style: none;
+  display: inline;
+}
+
+.nav-bar {
+  top: 0;
+  background-color: rgba(20, 20, 20, 0.9);
+  height: 40px;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-bar nav a{
+  margin-top: 14px;
+  padding-right: 30px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: "Metropolis", Arial, sans-serif;
+}
+
+.nav-bar nav a:last-child {
+ padding-right: 0;
+}
+
+.current {
+  color: #fff;
+}
+
+/* wordpress specific menu stylings */
+#menu li.current_page_item a {
+}
+#menu li.first a {
+}
+#menu li.last a {
+}
+
+
+
+
+/* CONTENT */
+
+.content {
+    padding: 0 0 50px 0;
+}
+
+#partOne {
+    background: url("images/main-bg.jpeg") center center fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+}
+
+#partTwo {
+    background: #fff;
+}
+
+#partThree {
+    background: url("images/south-dakota.jpg") center center fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 95vh;
+}
+
+#partThree h1 {
+    margin-left: 0;
+}
+
+.parallax h1 {
+    margin-top: 100px;
+    margin-left: 5%;
+}
+
+p.home-desc {
+    min-width: 300px;
+    width: 45%;
+    margin: 50px 0 50px 5%;
+    text-align: left;
+    padding-right: 15px;
+}
+
+.contact-box {
+    display: flex;
+    padding: 30px;
+    width: 60%;
+    height: 25vh;
+    background: rgba(255, 255, 255, .2);
+    margin: 20px;
+    text-align: left;
+}
+
+.contact-box .contact-title,
+.contact-box .form {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding-right: 10px;
+}
+
+.contact-box p {
+    color: #fff;
+    margin-left: 50px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.button {
+    display: inline-flex;
+    margin-top: 50px;
+    background: transparent;
+    color: #F0BA61;
+    border: 3px solid #F0BA61;
+    font-family: Metropolis, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    background: #F0BA61;
+    color: #fff;
+}
+
+
+/* FORMS */
+
+
+input {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 90%;
+    padding: 10px;
+    margin: 2px 0;
+    border-style: none;
+    font-size: 1em;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  bottom: 0;
+  background-color: #222;
+  height: 100%;
+  width: 100%;
+}
+
+footer p {
+  color: #ffffff;
+  padding: 23px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 768px){
+
+  .contact-box {
+    display: block;
+    width: 83%;
+    margin: 0 auto;
+  }
+
+
+  .contact-box .contact-title,
+  .contact-box .form {
+    padding-top: 20px;
+  }
+
+
+
+
+}
