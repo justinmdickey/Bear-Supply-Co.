@@ -47,24 +47,24 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 @font-face {
     font-family: "Majesti Banner Heavy";
-    src: url("file:///Users/Justin/E-gineering/Development/HTML/My%20Test%20Site/fonts/majesti/majesti-banner-heavy.woff");
+    src: url("fonts/majesti/majesti-banner-heavy.woff");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Majesti Banner Light";
-    src: url("file:///Users/Justin/E-gineering/Development/HTML/My%20Test%20Site/fonts/majesti/majesti-banner-light.woff");
+    src: url("fonts/majesti/majesti-banner-light.woff");
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Metropolis';
-    src: url("file:///Users/Justin/E-gineering/Development/HTML/My%20Test%20Site/fonts/metropolis/metropolis-thin.otf")
+    src: url("fonts/metropolis/metropolis-thin.otf")
 }
 
 @font-face {
     font-family: 'Crimson Text';
-    src: url("file:///Users/Justin/E-gineering/Development/HTML/My%20Test%20Site/fonts/Crimson/CrimsonText-Roman.ttf")
+    src: url("fonts/Crimson/CrimsonText-Roman.ttf")
 }
 
 body {
@@ -277,7 +277,7 @@ nav ul {
 }
 
 #partOne {
-    background: url("file:///Users/Justin/E-gineering/Development/HTML/My%20Test%20Site/images/main-bg.jpeg") center center fixed;
+    background: url("images/main-bg.jpeg") center center fixed;
     background-size: cover;
     background-attachment: scroll;
     height: 100vh;
@@ -288,7 +288,7 @@ nav ul {
 }
 
 #partThree {
-    background: url("file:///Users/Justin/E-gineering/Development/HTML/My%20Test%20Site/images/south-dakota.jpg") center center fixed;
+    background: url("images/south-dakota.jpg") center center fixed;
     background-size: cover;
     background-attachment: scroll;
     height: 95vh;
